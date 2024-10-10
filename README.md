@@ -15,4 +15,4 @@ This is a simple JavaScript library for managing tasks in a to-do app. The libra
 To use the library, clone the repository from GitHub:
 
 ```bash
-git clone https://github.com/your-username/todo-library.git
+git clone https://github.com/CaptainThunder31/todo-library-.git
