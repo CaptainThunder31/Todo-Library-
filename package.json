@@ -4,12 +4,15 @@
   "description": "This is a simple JavaScript library for managing tasks in a to-do app. The library offers essential features to add, remove, and manage tasks, including localStorage integration to persist tasks between page loads.",
   "main": "todoLibrary.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.1"
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7"
   }
 }
