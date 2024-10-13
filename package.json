@@ -1,0 +1,15 @@
+{
+  "name": "todo-library-ui",
+  "version": "1.0.0",
+  "description": "This is a simple JavaScript library for managing tasks in a to-do app. The library offers essential features to add, remove, and manage tasks, including localStorage integration to persist tasks between page loads.",
+  "main": "todoLibrary.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
