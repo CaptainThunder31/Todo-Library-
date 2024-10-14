@@ -1,3 +1,12 @@
+:root {
+  --md-sys-color-primary: red;
+  --md-sys-color-secondary: blue;
+  --md-sys-shape-corner-small: 4px;
+  --md-sys-shape-corner-medium: 6px;
+  --md-sys-shape-corner-large: 8px;
+
+}
+
 body { 
     font-family: Arial, sans-serif; 
     text-align: center;
@@ -31,19 +40,23 @@ body {
   padding: 0;
   box-shadow: 0 0 5px  black;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 .listscroll {
-  width: calc(90% - 5px);
+  width: calc(90% + 40px);
   height: calc(100% - 10px);
   overflow: scroll;
   overflow-x: hidden;
-  padding:  10px 30px;
+  padding: 0px 0px 1px 0px;
+  display: flex;
+  flex-direction: column;
 }
 .listscroll::-webkit-scrollbar {
   border-radius: 10px;
   background-color:rgb(209, 239, 243);
   width: 10px;
-}
+}UI
 .listscroll::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #749c96;
@@ -52,8 +65,16 @@ body {
 .task { 
   display: flex; 
   justify-content: space-between; 
-  padding: 5px; 
-  border-bottom: 1px solid #ccc; 
+  padding: 0; 
+  align-items: center;
+  border-radius: 100px;
+  font-size: 120%;
+}
+md-item {
+  border-radius: 1000px !important;
+}
+#taskList {
+  width: 100%;
 }
 .completed { 
   text-decoration: line-through; 
@@ -77,7 +98,7 @@ body {
   width: 70vw;
   min-width: 263px;
   display: flex;
-  background-color: rgb(223 223 223);
+  background-color: rgb(189, 216, 214);
   box-shadow: -3px -3px 3px white, 3px 3px 3px #000000b3;
   justify-content: center;
   align-items: center;
@@ -107,20 +128,25 @@ body {
 }
 
 #addbtn {
+  margin-right: 5px;
+  /* transition: background-color 0.2s;
+  border-radius: 1000px; */
+  /*
   background-color: transparent;
-  height: 100%;
   aspect-ratio: 1;
-  border-radius: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: none;
   background-color: rgba(101, 129, 125, 0);
-  margin-right: 5px;
-  transition: background-color 0.2s;
+  border: none;
+  height: 100%; */
 }
 
 #addbtn:hover {
-  background-color: rgba(101, 129, 125, 0.349);
+  /* background-color: rgba(101, 129, 125, 0.349);  */
 
+}
+
+md-icon-button::part(container):hover {
+  background-color: darkpurple;
 }
