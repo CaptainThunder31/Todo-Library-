@@ -26,9 +26,27 @@ body {
   left: 50%;
   translate: -50% -50%;
   height: 50vh;
-  overflow: scroll;
   background-color: white;
+  border-radius: 30px;
+  padding: 0;
+  box-shadow: 0 0 5px  black;
+  overflow: hidden;
+}
+.listscroll {
+  width: calc(90% - 5px);
+  height: calc(100% - 10px);
+  overflow: scroll;
   overflow-x: hidden;
+  padding:  10px 30px;
+}
+.listscroll::-webkit-scrollbar {
+  border-radius: 10px;
+  background-color:rgb(209, 239, 243);
+  width: 10px;
+}
+.listscroll::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #749c96;
 }
 
 .task { 
@@ -72,6 +90,7 @@ body {
   align-items: center;
   overflow: hidden;
   border-radius: 1000px;
+  transition: box-shadow 0.3s;
 }
 .input:focus-within {
   box-shadow: 0 0 4px black;
@@ -96,5 +115,12 @@ body {
   justify-content: center;
   align-items: center;
   border: none;
-  background-color: rgba(128, 128, 128, 0.37);
+  background-color: rgba(101, 129, 125, 0);
+  margin-right: 5px;
+  transition: background-color 0.2s;
+}
+
+#addbtn:hover {
+  background-color: rgba(101, 129, 125, 0.349);
+
 }
