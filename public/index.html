@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet">
+    <script type="importmap">
+      {
+        "imports": {
+          "@material/web/": "https://esm.run/@material/web/"
+        }
+      }
+    </script>
+    <script type="module">
+      import '@material/web/all.js';
+      import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
+  
+      document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
+  </head>
+  <body>
+    <div class="topbar" class="md-typescale-display-medium">
+      <h1 style="margin:0;">Todo List</h1>
+    </div>
+    <div class="listview">
+      <div class="listscroll">
+        <md-list id="taskList"></md-list>
+      </div>
+    </div>
+    <div class="inputarea">
+        <div class="inputbox">
+          <div class="input">
+            <input type="text" id="newTask" placeholder="Add a new task">
+            <md-icon-button id="addbtn" onclick="addTask()">
+              <md-icon><i class="material-symbols-rounded">add</i></md-icon>
+            </md-icon-button>
+            </div>
+        </div>
+    </div>
+    <script src="https://shihanrishad.github.io/Todo-Library-UI/todoLibrary.js"></script> <!--Currently it doesn't have any online access-->
+    <script src="script.js">
+    </script>
+  </body>
+</html>
