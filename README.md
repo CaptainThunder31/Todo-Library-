@@ -1,4 +1,4 @@
-# My To-Do Library
+# To-Do Library
 
 This is a simple JavaScript library for managing tasks in a to-do app. The library offers essential features to add, remove, and manage tasks, including localStorage integration to persist tasks between page loads.
 
